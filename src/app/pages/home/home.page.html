@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-avatar>
+        <img src="assets/imgs/burger-menu.svg" alt="user" />
+      </ion-avatar>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <img src="assets/imgs/avatar.svg" alt="user" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item lines="none" class="welcome-message">
+    <ion-label>
+      <ion-text>Hello</ion-text>
+      <p>Welcome to your Home</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-card class="weather-card ion-padding-vertical">
+    <ion-item lines="none">
+      <ion-icon slot="start" color="secondary" name="cloud-outline"></ion-icon>
+      <ion-label>
+        Mostly Cloudy
+        <p>Sydney, Australia</p>
+      </ion-label>
+      <ion-text color="secondary" slot="end">22°</ion-text>
+    </ion-item>
+    <ion-grid>
+      <ion-row class="ion-text-center weather-details">
+        <ion-col>27°C <span class="label">Sensible</span></ion-col>
+        <ion-col>4% <span class="label">Precipitation</span></ion-col>
+        <ion-col>56% <span class="label">Humidity</span></ion-col>
+        <ion-col>16 km/h <span class="label">Wind</span></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  
+    <ion-item-divider>
+      <ion-label>Your Rooms</ion-label>
+    </ion-item-divider>
+  
+</ion-content>
