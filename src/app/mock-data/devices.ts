@@ -51,8 +51,8 @@ export const DEVICES: Device[] = [
   },
   {
     id: 7,
-    room_id: 1,
-    name: 'TV Backlight',
+   room_id: 1,
+    name: 'TV backlight Lamp',
     icon: 'bulb',
     status: true,
     charUuid: '0000aaa7-0000-1000-8000-00805f9b34fb',

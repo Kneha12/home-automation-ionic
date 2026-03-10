@@ -1,10 +1,15 @@
 ion-card {
   border-radius: 25px;
-  padding: 20px 30px;
+  padding: 5px 10px;
   ion-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    ion-thumbnail{
+        img{
+            object-fit: cover;
+        }
+    }
     ion-label {
       margin-top: 20px;
       ion-text{

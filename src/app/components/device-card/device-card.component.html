@@ -2,7 +2,7 @@
 @defer (when deviceData) {
   @let deviceImage = getDeviceImage(deviceData!.name);
   <ion-card>
-    <ion-col class="ion-pading">
+    <ion-col class="ion-padding">
       <ion-thumbnail>
       <img [src]="deviceImage" alt="{{deviceData?.name}}"/>
       </ion-thumbnail>
