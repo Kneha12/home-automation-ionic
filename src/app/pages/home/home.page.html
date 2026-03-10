@@ -39,9 +39,20 @@
       </ion-row>
     </ion-grid>
   </ion-card>
-  
-    <ion-item-divider>
-      <ion-label>Your Rooms</ion-label>
-    </ion-item-divider>
-  
+
+  <ion-item-divider>
+    <ion-label>Your Rooms</ion-label>
+  </ion-item-divider>
+
+  <ion-grid>
+    <ion-row>
+      @for(room of rooms(); track $index){
+      <ion-col size="6">
+        <app-room-card [room]="room">
+
+        </app-room-card>
+      </ion-col>
+      }
+    </ion-row>
+  </ion-grid>
 </ion-content>
