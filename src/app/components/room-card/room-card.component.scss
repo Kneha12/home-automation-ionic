@@ -1,0 +1,23 @@
+ion-card.room-card{
+    border-radius: 25px;
+    ion-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        ion-avatar{
+            width: 4rem;
+            height: 4rem;
+            border: 1px solid var(--ion-color-primary);
+        }
+        ion-label{
+            ion-note{
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            p{
+                margin-top: 5px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

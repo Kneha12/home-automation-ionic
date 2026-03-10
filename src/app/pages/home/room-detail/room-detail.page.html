@@ -1,13 +1,18 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>room-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{room()?.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">room-detail</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+ <ion-row>
+  @for(device of devices(); track $index){
+   <ion-col size="6">
+    <app-device-card [device]="device"></app-device-card>
+   </ion-col>
+  }
+ </ion-row>
 </ion-content>

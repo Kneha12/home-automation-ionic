@@ -1,0 +1,27 @@
+@let deviceData = device();
+@defer (when deviceData) {
+  @let deviceImage = getDeviceImage(deviceData!.name);
+  <ion-card>
+    <ion-col class="ion-pading">
+      <ion-thumbnail>
+      <img [src]="deviceImage" alt="{{deviceData?.name}}"/>
+      </ion-thumbnail>
+      <ion-label class="ion-margin-top">
+        <ion-note color="dark">{{ deviceData?.name }}</ion-note>
+        <ion-text color="medium">
+          <p>
+            <ion-toggle
+              name="status"
+              color="success"
+              justify="space-between"
+              [(ngModel)]="deviceData!.status"
+              (ionChange)="toggleDevice(deviceData!, $event)"
+            >
+              {{ deviceData?.status ? "On" : "Off" }}
+            </ion-toggle>
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-col>
+  </ion-card>
+}

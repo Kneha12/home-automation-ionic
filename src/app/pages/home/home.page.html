@@ -49,10 +49,15 @@
       @for(room of rooms(); track $index){
       <ion-col size="6">
         <app-room-card [room]="room">
-
         </app-room-card>
       </ion-col>
       }
     </ion-row>
   </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button class="shadow-button" color="success" size="large">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
